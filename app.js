@@ -10,6 +10,7 @@ import messageRoute from "./routes/message.route.js";
 import dotenv from 'dotenv';
 
 dotenv.config();
+console.log(process.env.DATABASE_URL);
 const app = express();
 
 app.use(cors({ origin: '*', credentials: true }));
