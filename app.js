@@ -18,7 +18,7 @@ app.use(cors({
   methods: 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
   withCredentials: true, // Incluir credenciales en las solicitudes
   headers: {
-    'Access-Control-Allow-Origin': 'https://www.alquilease.com/', // Reemplazar con el dominio de tu frontend
+    'Access-Control-Allow-Origin': 'https://www.alquilease.com', // Reemplazar con el dominio de tu frontend
     'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
   },
 }));
