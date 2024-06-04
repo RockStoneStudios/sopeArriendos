@@ -13,7 +13,11 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({ 
+  origin: '*', 
+  methods: 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+  credentials : true
+}));
 app.use(express.json());
 app.use(cookieParser());
 
