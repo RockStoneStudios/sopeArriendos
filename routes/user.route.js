@@ -19,7 +19,7 @@ router.put("/:id", verifyToken, updateUser);
 router.delete("/:id", verifyToken, deleteUser);
 router.post("/save", verifyToken, savePost);
 router.get("/profilePosts", verifyToken, profilePosts);
-router.get("/notification", verifyToken, getNotificationNumber);
+// router.get("/notification", verifyToken, getNotificationNumber);
 router.get('/lease/:id',verifyToken,lease);
 
 export default router;
